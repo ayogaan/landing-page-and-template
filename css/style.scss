@@ -1,11 +1,27 @@
+
+$cream: #fbf6f0;
+$cyan : #aee6e6;
+$yellow : #ffda77;
+$orange : #ffa45b;
+
+
 body{
-    background-color: #f7f5f2;
+    background-color: $yellow;
+    overflow-x: hidden;
 }
 nav{
     transition: all .3s ;
-    
-
-
+}
+.label-tag{
+    margin-bottom: 0;
+    background: $yellow;
+    color: $cream;
+    font-size: 24px;
+    font-family: Gotham,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: .5rem 1rem;
+    transform: skewX(-12deg);
 }
 footer{a{
     text-decoration: none;
@@ -14,6 +30,7 @@ footer{a{
     font-weight: bold;
 
 }
+
 }
 .carousel-control-prev,
 .carousel-control-next{
@@ -23,6 +40,19 @@ footer{a{
 .carousel-item{
     background-color: brown;
 }
+
+
+@media  (max-width: 760px) {
+    .first{
+        button{
+            font-size: 12px !important;
+        }
+        .header-txt{
+            font-size: 32px !important;
+        }   
+    }
+    
+  }
 
 .to-center{
     position: relative;
@@ -38,18 +68,17 @@ footer{a{
 .afscroll{
     background-color: #fff;
 }
-.navigation{
-    margin-top: 100px;
-}
+
 .first{
-    background-color: #f7f5f2;
+    background-color: $yellow;
     height: 70vh;
     button{
         box-shadow: 0 0 11px rgba(33,33,33,.2); 
         font-size: 20px;
         border-radius: 30px !important;
         width: 200px;
-        background-color:  #f7f5f2;
+        background-color:$orange;
+        color: $cream;
     }
     button:checked{
         border:0;
@@ -57,6 +86,7 @@ footer{a{
     }
     button:hover{
         box-shadow: 0 0 0px rgba(33,33,33,.2); 
+        color:$cream;
     }
     .header-txt{
         font-weight: bold;
@@ -71,6 +101,12 @@ footer{a{
 .second{
     height: 100vh;
     background-color: #fff;
+
+    .col-6{
+        img{
+            margin-left: 15rem;
+        }
+    }
 }
 
 .navbar-brand{
@@ -351,4 +387,27 @@ footer{a{
   /* remove webkit p margins */
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
+}
+
+.second-opt{
+    background-color: $cream;
+    
+}
+.chat{
+    padding: 28px;
+}
+.max-box{
+    img{
+        height: 70px;
+        width: 70px;
+        
+    }
+    .bubble{
+        margin:20px;
+        margin-left: 30px;
+        padding: 10px;
+    }
+    .talktext{
+        padding: 4px !important;
+    }
 }
