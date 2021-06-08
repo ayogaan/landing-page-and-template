@@ -11,6 +11,7 @@ body{
 }
 nav{
     transition: all .3s ;
+	z-index: 100;
 }
 .label-tag{
     margin-bottom: 0;
@@ -417,4 +418,13 @@ footer{a{
     .talktext{
         padding: 4px !important;
     }
+}
+
+#preload{
+	background: #000 url(../assets/img/preload.gif) no-repeat center center;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	
 }
