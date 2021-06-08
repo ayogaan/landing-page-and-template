@@ -50,7 +50,14 @@ footer{a{
         .header-txt{
             font-size: 32px !important;
         }   
+
     }
+	.big-phone{
+		display: none !important;
+	}
+	.small-phone{
+		display: block !important;
+	}
     
   }
 
@@ -148,7 +155,7 @@ footer{a{
   position: relative;
 	width: 200px;
 	height: auto;
-	background-color: lightyellow;
+	background-color: $cyan;
 }
 .border{
   border: 8px solid #666;
@@ -183,7 +190,7 @@ footer{a{
   top: 0px;
 	bottom: auto;
 	border: 22px solid;
-	border-color: lightyellow transparent transparent transparent;
+	border-color: $cyan transparent transparent transparent;
 }
 
 /* Right triangle, left side slightly down */
@@ -209,7 +216,7 @@ footer{a{
   top: 38px;
 	bottom: auto;
 	border: 12px solid;
-	border-color: lightyellow lightyellow transparent transparent;
+	border-color: $cyan $cyan transparent transparent;
 }
 
 /*Right triangle, placed bottom left side slightly in*/
@@ -235,7 +242,7 @@ footer{a{
   top: auto;
 	bottom: -20px;
 	border: 22px solid;
-	border-color: transparent transparent transparent lightyellow;
+	border-color: transparent transparent transparent $cyan;
 }
 
 /*Right triangle, placed bottom left side slightly in*/
@@ -261,7 +268,7 @@ footer{a{
   top: auto;
 	bottom: -20px;
 	border: 12px solid;
-	border-color: lightyellow transparent transparent lightyellow;
+	border-color: $cyan transparent transparent $cyan;
 }
 
 /*Right triangle, placed bottom right side slightly in*/
@@ -285,7 +292,7 @@ footer{a{
 	right: 38px;
 	bottom: -20px;
 	border: 12px solid;
-	border-color: lightyellow lightyellow transparent transparent;
+	border-color: $cyan $cyan transparent transparent;
 }
 /*
 	left: -8px;
@@ -322,7 +329,7 @@ footer{a{
 	right: 0px;
 	bottom: -20px;
 	border: 12px solid;
-	border-color: lightyellow lightyellow transparent transparent;
+	border-color: $cyan $cyan transparent transparent;
 }
 
 /* Right triangle, right side slightly down*/
@@ -348,7 +355,7 @@ footer{a{
   top: 38px;
 	bottom: auto;
 	border: 12px solid;
-	border-color: lightyellow transparent transparent lightyellow;
+	border-color: $cyan transparent transparent $cyan;
 }
 
 /* Right triangle placed top right flush. */
@@ -374,7 +381,7 @@ footer{a{
   top: 0px;
 	bottom: auto;
 	border: 20px solid;
-	border-color: lightyellow transparent transparent transparent;
+	border-color: $cyan transparent transparent transparent;
 }
 
 /* talk bubble contents */

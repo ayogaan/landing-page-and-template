@@ -45,6 +45,12 @@ footer .tittle {
   .first .header-txt {
     font-size: 32px !important;
   }
+  .big-phone {
+    display: none !important;
+  }
+  .small-phone {
+    display: block !important;
+  }
 }
 
 .to-center {
@@ -147,7 +153,7 @@ footer .tittle {
   position: relative;
   width: 200px;
   height: auto;
-  background-color: lightyellow;
+  background-color: #aee6e6;
 }
 
 .border {
@@ -184,7 +190,7 @@ footer .tittle {
   top: 0px;
   bottom: auto;
   border: 22px solid;
-  border-color: lightyellow transparent transparent transparent;
+  border-color: #aee6e6 transparent transparent transparent;
 }
 
 /* Right triangle, left side slightly down */
@@ -211,7 +217,7 @@ footer .tittle {
   top: 38px;
   bottom: auto;
   border: 12px solid;
-  border-color: lightyellow lightyellow transparent transparent;
+  border-color: #aee6e6 #aee6e6 transparent transparent;
 }
 
 /*Right triangle, placed bottom left side slightly in*/
@@ -238,7 +244,7 @@ footer .tittle {
   top: auto;
   bottom: -20px;
   border: 22px solid;
-  border-color: transparent transparent transparent lightyellow;
+  border-color: transparent transparent transparent #aee6e6;
 }
 
 /*Right triangle, placed bottom left side slightly in*/
@@ -265,7 +271,7 @@ footer .tittle {
   top: auto;
   bottom: -20px;
   border: 12px solid;
-  border-color: lightyellow transparent transparent lightyellow;
+  border-color: #aee6e6 transparent transparent #aee6e6;
 }
 
 /*Right triangle, placed bottom right side slightly in*/
@@ -290,7 +296,7 @@ footer .tittle {
   right: 38px;
   bottom: -20px;
   border: 12px solid;
-  border-color: lightyellow lightyellow transparent transparent;
+  border-color: #aee6e6 #aee6e6 transparent transparent;
 }
 
 /*
@@ -329,7 +335,7 @@ footer .tittle {
   right: 0px;
   bottom: -20px;
   border: 12px solid;
-  border-color: lightyellow lightyellow transparent transparent;
+  border-color: #aee6e6 #aee6e6 transparent transparent;
 }
 
 /* Right triangle, right side slightly down*/
@@ -356,7 +362,7 @@ footer .tittle {
   top: 38px;
   bottom: auto;
   border: 12px solid;
-  border-color: lightyellow transparent transparent lightyellow;
+  border-color: #aee6e6 transparent transparent #aee6e6;
 }
 
 /* Right triangle placed top right flush. */
@@ -383,7 +389,7 @@ footer .tittle {
   top: 0px;
   bottom: auto;
   border: 20px solid;
-  border-color: lightyellow transparent transparent transparent;
+  border-color: #aee6e6 transparent transparent transparent;
 }
 
 /* talk bubble contents */
