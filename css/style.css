@@ -436,4 +436,9 @@ footer .tittle {
   position: fixed;
   z-index: 2000 !important;
 }
+
+.special-fu {
+  background-color: #aee6e6;
+  height: 60vh;
+}
 /*# sourceMappingURL=style.css.map */
