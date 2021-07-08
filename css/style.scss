@@ -1,14 +1,23 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap');
 $cream: #fbf6f0;
 $cyan : #aee6e6;
 $yellow : #ffda77;
 $orange : #ffa45b;
 
-
+.header-txt, .navbar-brand{
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	text-transform: uppercase;
+}
 body{
     background-color: $yellow;
     overflow-x: hidden;
 }
+
+
+.prodpop-content:hover{
+	box-shadow: 0 0 0px rgba(33,33,33,.2);
+}
+
 nav{
     transition: all .3s ;
 	z-index: 100;
@@ -32,6 +41,14 @@ footer{a{
 
 }
 
+
+
+}
+
+.big-phone{
+	img{
+	width: 100%;
+}
 }
 .carousel-control-prev,
 .carousel-control-next{
@@ -41,9 +58,38 @@ footer{a{
 .carousel-item{
     background-color: brown;
 }
+@media(max-width:980){
+	.first{
+        button{
+            font-size: 12px !important;
+        }
+        .header-txt{
+            font-size: 32px !important;
+        }   
 
+    }
+	.big-phone{
+		img{
+		width: 100% !important;
+	}	
+	}	
+	
+}
+
+iframe{
+	width:100%;
+	height:300px;
+}
 
 @media  (max-width: 760px) {
+	iframe{
+		width:100%;
+		height:200px;
+	}
+
+	.label-tag{
+		font-size: 18px !important;
+	}
     .first{
         button{
             font-size: 12px !important;
@@ -59,8 +105,16 @@ footer{a{
 	.small-phone{
 		display: block !important;
 	}
+	.container-pacakge {
+		width: 100% !important;
+	  }
+	
     
   }
+
+  .product-package{
+	width: 100%;
+}
 
 .to-center{
     position: relative;
@@ -432,3 +486,64 @@ footer{a{
 .special-fu{
 	background-color: $cyan;	
 }
+
+.third{
+	background-color: $orange;	
+}
+
+.container-pacakge {
+	position: relative;
+	width: 80%;
+  }
+  
+  .image {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+  }
+  
+  .middle,.prod-detail {
+	transition: .5s ease;
+	opacity: 0;
+	position:absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  
+  .container-pacakge:hover .image {
+	opacity: 0.3;
+  }
+  
+  .container-pacakge:hover .middle {
+	opacity: 1;
+  }
+  
+  .text {
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+  }
+
+  .prod-content{
+	  margin-top: 20px !important;
+	  transition: 0.3s all;
+  }
+  .prod-content:hover{
+	margin-top: 0px !important;
+	opacity: 0.7;
+
+  }
+  .prod-detail{
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+
+  }

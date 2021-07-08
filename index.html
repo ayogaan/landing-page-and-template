@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Hello, world!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
   </head>
   <body>
 
@@ -20,8 +22,8 @@
     <nav class="navbar bfscroll sticky-top navbar-expand-lg navbar-light shadow-sm">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <i class="fas fa-gem me-3"></i>
-          Masnano</a>
+          <span class="mr-3"> <img class="mx-3" width="50px" src="./assets/img/logo.png" alt="" srcset=""> </span>
+          MASNANO</a>
         <button class="border-0 navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,9 +32,9 @@
             <li class="nav-item">
               <div class="input-group">
                 <div class="form-outline">
-                  <input type="search" id="form1" class="form-control" />
+                  <input id="code" type="search" placeholder="Check Maskermu" id="form1" class="form-control" />
                                   </div>
-                <button type="button" class="btn btn-primary">
+                <button id="auth" style="background-color: orange; color: white;" type="button"  class="btn ">
                   <i class="fas fa-search"></i>
                 </button>
               </div>
@@ -47,8 +49,8 @@
     <section class="first pt-5">
       <div class="container pt-5">
         <div class="">
-        <div class="navigation d-flex justify-content-center">
-          <button class="btn rounded px-3 mx-3">Belanja</button>
+        <div class="navigation d-flex justify-content-center" data-aos="fade-up">
+          <button id="prod-destroy" class="btn rounded px-3 mx-3">Belanja</button>
           <button class="btn rounded px-3 mx-3">#SpecialForYou</button>
           <button class="btn rounded px-3 mx-3">Tentang Kami</button>
           
@@ -62,7 +64,7 @@
     </section>
     <section class="second-opt">
       <div class="container p-5">
-        <label class="label-tag d-flex justify-content-center mx-5">
+        <label data-aos="fade-up" class="label-tag d-flex justify-content-center mx-5">
           <span>MASNANO</span>
         </label>
         <br>
@@ -73,8 +75,8 @@
           <img style="height: 1000px;" src="https://whatsappbrand.com/wp-content/themes/whatsapp-brc/images/chat-thumb-android-1.png" alt="">
         </div>  
         -->
-        <div class="col-12 col-md-6 col-sm-6 ">
-        <div class="d-flex ml-5 max-box ">
+        <div class="col-12 col-md-6 col-sm-12 ">
+        <div class="d-flex ml-5 max-box" data-aos="fade-up">
           <img src="https://prog-8.com/assets/packs/dist/images/hitsuji_caption_image-988624202b2e46113477..png" alt="">
           <div class="bubble talk-bubble tri-right left-top ">
             <div class="talktext">
@@ -82,39 +84,74 @@
             </div>
           </div>  
         </div>
-        <div class="d-flex ml-5 max-box justify-content-end  ">
+        <div class="d-flex ml-5 max-box justify-content-end  " data-aos="fade-up">
           <div class="bubble talk-bubble tri-right right-top">
             <div class="talktext">
               <p style="text-align: right;">Lah kenapa engga ! tuh tonton videonya </p>
             </div>
           </div> 
-          <img src="https://prog-8.com/assets/packs/dist/images/hitsuji_caption_image-988624202b2e46113477..png" alt="">
+          <img  src="https://prog-8.com/assets/packs/dist/images/hitsuji_caption_image-988624202b2e46113477..png" alt="">
         </div>
         
-        <div class="d-flex ml-1 max-box justify-content-end  ">
+        <div class="d-flex ml-1 max-box justify-content-end  " data-aos="fade-up">
           <div style="width: 100%;" class="bubble talk-bubble tri-right">
             <div class="talktext">
-              <iframe width="100%" height="300px" src="https://www.youtube.com/embed/kiOUAsUGEuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe  src="https://www.youtube.com/embed/kiOUAsUGEuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div> 
          
         </div>
       </div>
 
-      <div class="col-12 col-md-6 col-sm-6 big-phone d-flex justify-content-end">
-        <img style="width: 80%;" src="https://whatsappbrand.com/wp-content/themes/whatsapp-brc/images/chat-thumb-android-1.png" alt="">
+      <div class="col-12 col-md-6 col-sm-6 big-phone d-flex justify-content-end" data-aos="fade-up">
+        <img  src="https://whatsappbrand.com/wp-content/themes/whatsapp-brc/images/chat-thumb-android-1.png" alt="">
       </div>
 
 
     </div>
       </div>
     </section>
+
+    <section class="third">
+      <div class="container p-5">
+        <label data-aos="fade-up"class="mb-5 label-tag d-flex justify-content-center mx-5 mb-3">
+          <span>Our Product</span>
+        </label>
+        <div class="row">
+          <div class="col-12 col-md-6 col-sm-12 mb-5">
+            <div class="container-pacakge shadow" data-aos="fade-up">
+              <img src="./assets/img/Packaging.png" alt="Avatar" class="image" style="width:100%">
+              <div class="middle">
+                <div class="text">
+                  <p style="text-align: center;"> Setiap satu kotak berisi<br>1 item masker kain </p>
+                  <button class="btn-primary btn">Beli Sekarang</button>
+
+                </div>
+              
+              </div>
+             
+            </div>
+          </div>
+          <div class="product col-12 col-md-6 col-sm-12 mb-5 d-flex align-items-center flex-column">
+            <h5 data-aos="fade-up" id="head-name">Variant Masker</h5>
+            <div class=" d-flex justify-content-center">
+            <img id="prod-1" class="prod-content shadow m-1" src="./assets/img/Packaging.png" width="30%"  alt="Avatar" class="image" >
+            <img id="prod-2" class="prod-content shadow m-1" src="./assets/img/Packaging.png" width="30%"  alt="Avatar" class="image" >
+            <img id="prod-3" class="prod-content shadow m-1" src="./assets/img/Packaging.png" width="30%"  alt="Avatar" class="image"  >
+          </div>
+          </div>
+        </div>
+     
+    </div>
+    </section>
+
+    
     <section class="special-fu">
       <div class="container p-5">
-        <label class="label-tag d-flex justify-content-center mx-5 mb-3">
+        <label data-aos="fade-up" class="label-tag d-flex justify-content-center mx-5 mb-3">
           <span>#SpecialForYou</span>
         </label>
-      <div id="data-container" class="row"></div>
+      <div id="data-container" data-aos="fade-up" class="row"></div>
       <div style="float: right;" id="pagination"></div>
     </div>
     </section>
@@ -185,7 +222,7 @@
     </div>
   <!-- Copyright -->
 </footer>
-
+  
 
 <!-- Footer -->
 
@@ -201,10 +238,17 @@
     -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/pagination.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/xhrequst.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      
+      AOS.init();
+    </script>
+   <script>
+      //loading animation
       var pre = $('#preload')
       pre.css('display','block')
       $(window).on("load",function(){
@@ -216,11 +260,12 @@
 
           var scroll = $(window).scrollTop();
           if (scroll >= 155) {
-            console.log(scroll)
+            
             nav.removeClass('bfscroll')
             .addClass('afscroll')
+           
           }else{
-            console.log(scroll)
+            
             nav.removeClass('afscroll')
             .addClass('bfscroll')
           }
@@ -230,6 +275,7 @@
       
     </script>
     <script>
+      //pagination
       $(document).ready(function(){
       $(function () {
           let container = $('#pagination');
@@ -266,7 +312,96 @@
         console.log("something");
         $('.card-body').fadeIn(1000);
       })
+    
+      function changetxthead(obj,prodname){
+        obj.mouseover(function(){
+        $("#head-name").text(prodname);
+        });
+        obj.mouseleave(function(){
+        $("#head-name").text("Variant Produk");
+        });    
+      }
 
+      function prodonclick(obj, content){
+        obj.click(function(){
+          showDetail();
+          }); 
+      }
+
+     
+
+      var txt1 = $("#prod-1");
+      var txt2 = $("#prod-2");
+      var txt3 = $("#prod-3");
+      changetxthead(txt1,"produk satu");
+      changetxthead(txt2,"produk dua");
+      changetxthead(txt3,"produk tiga");
+      prodonclick(txt1, "ini sesuatu");
+      prodonclick(txt2, "ini sesuatu");
+      prodonclick(txt3, "ini sesuatu");
+      
+      $("#prod-destroy").click(function(){
+        console.log("anjing lu");
+      });  
+
+      $('#auth').click(function(){
+        var codeval = $('#code').val();
+        const data ={ code: codeval }
+        axiosPost(url+'/auth', data).then(data=>{
+        console.log(data);
+          if(data!=null){
+            Swal.fire({
+  title: 'Valid!',
+  text: data.message,
+  imageUrl: 'https://unsplash.it/400/200',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+})
+          }else{
+            Swal.fire({
+  title: 'Invalid!',
+  text: "code not valid",
+  imageUrl: 'https://unsplash.it/400/200',
+  imageWidth: 400,
+  imageHeight: 200,
+  imageAlt: 'Custom image',
+})          
+          }
+      })
+      })
+
+  function showDetail(){    
+      Swal.fire({
+  title: '<strong>Masker satu</u></strong>',
+  width:'800',
+  html:
+       '<div class="row mt-3">'+
+      '<div class="col-md-8">'+
+        '<img src="https://unsplash.it/400/200" style="width: 100%;" alt="">'+
+        '<div class=" d-flex justify-content-left mt-3 "">'+
+            '<img id="prodpop-1" class="prodpop-content shadow m-1" src="./assets/img/Packaging.png" width="10%"  alt="Avatar" class="image" >'+
+            '<img id="prodpop-2" class="prodpop-content shadow m-1" src="./assets/img/Packaging.png" width="10%"  alt="Avatar" class="image" >'+
+            '<img id="prodpop-3" class="prodpop-content shadow m-1" src="./assets/img/Packaging.png" width="10%"  alt="Avatar" class="image"  >'+
+          '</div>'+
+     '</div>'+
+      '<div class="col" style="text-align:justify">'+
+        '<h5>deskripsi : </h5>'+
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem facere delectus odit totam iure inventore, molestias optio magni molestiae? Assumenda molestiae soluta incidunt, laborum possimus temporibus voluptas quasi recusandae at.'+
+      '</div>'+      
+    '</div>',
+
+  showCloseButton: false,
+  showCancelButton: false,
+  focusConfirm: false,
+  showConfirmButton:false,
+})
+}
+
+  $("#prodpop-1").click(function(){
+    console.log("you can do something here");
+  });
   </script>
+  
   </body>
 </html>
