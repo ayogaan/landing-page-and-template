@@ -29,8 +29,9 @@ nav {
   font-weight: 700;
   text-transform: uppercase;
   padding: .5rem 1rem;
-  -webkit-transform: skewX(-12deg);
-          transform: skewX(-12deg);
+  -webkit-transform: skewX(-12deg) !important;
+          transform: skewX(-12deg) !important;
+  border-radius: 10px;
 }
 
 footer a {
@@ -185,7 +186,6 @@ iframe {
 
 .product button {
   border-radius: 50px;
-  width: 70px;
 }
 
 .product .card:hover {
@@ -538,6 +538,7 @@ iframe {
   margin-top: 20px !important;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+  border-radius: 20px;
 }
 
 .prod-content:hover {

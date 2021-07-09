@@ -31,7 +31,8 @@ nav{
     font-weight: 700;
     text-transform: uppercase;
     padding: .5rem 1rem;
-    transform: skewX(-12deg);
+    transform: skewX(-12deg) !important;
+	border-radius: 10px;
 }
 footer{a{
     text-decoration: none;
@@ -107,6 +108,7 @@ iframe{
 	}
 	.container-pacakge {
 		width: 100% !important;
+		
 	  }
 	
     
@@ -195,7 +197,7 @@ iframe{
     }
     button{
         border-radius: 50px;
-        width: 70px;
+        
     }
 
     .card:hover{
@@ -533,6 +535,7 @@ iframe{
   .prod-content{
 	  margin-top: 20px !important;
 	  transition: 0.3s all;
+	  border-radius: 20px;
   }
   .prod-content:hover{
 	margin-top: 0px !important;
